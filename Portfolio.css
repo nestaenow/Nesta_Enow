@@ -1,0 +1,283 @@
+body {
+    margin: 0;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    padding-top: 19px;
+    background-image: url(Artboard\ 1.png);
+  }
+
+#header {
+  top: 0;
+  width: 100%;
+}
+
+header {
+  display: block;
+  display: grid;
+  position: fixed;
+  padding: 0;
+  top: 0;
+  height: 40px;
+  display: flex;
+  align-items: center;
+  font-size: 1.2em;
+  font-weight: 100;
+  background-color: #000000;
+  color: #ffffff;
+}
+
+#navbar {
+  background-color: black;
+  height: 40px;
+  width: 100%;
+  padding: 0;
+  display: flex;
+  justify-content: flex-end;
+  align-items: center;
+  font-size: 1.2em;
+  font-weight: 400;
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+#navbar a {
+  padding-right: 20px;
+}
+
+.nav-link {
+  color: #ffffff;
+}
+
+.nav-link:hover {
+  background-color: white;
+  color: black;
+  padding: 10px 10px 5px 10px;
+}
+
+h1 {
+  font-size: 3.5em;
+  font-weight: 500;
+  margin: 0;
+  color: #ffffff;
+  background-color: #000000;
+  padding: 5px 10px;
+}
+
+h2 {
+  font-size: 2em;
+  margin: 0;
+  font-weight: 100;
+  padding-left: 15px;
+}
+
+#projects-section-header {
+    max-width: 640px;
+    margin: 0 auto 2rem auto;
+    padding: 0px 0px 10px 0px;
+    border-bottom: 1px solid white;
+    font-family: 'Raleway', sans-serif;
+    font-weight: 700;
+    font-size: xx-large;
+    color: white;
+    display: block;
+}
+
+#welcome-section {
+    color: black;
+    min-height: 100vh;
+    display: grid;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+}
+
+
+a {
+    text-decoration: none;
+    color: black;
+}
+
+#logo {
+    margin-left: 5px;
+    padding-right: 50%;
+    height: auto;
+}
+
+#projects {
+  text-align: center;
+  background-color: black;
+  padding: 28px;
+  min-height: 600px;
+  margin-left: 20px;
+  margin-right: 20px;
+  border-radius: 0.25%;
+}
+
+#main-section {
+  display: flex;
+  justify-content: space-evenly;
+  display: grid;
+  grid-template-columns: 360px 360px;
+  grid-row-gap: 50px;
+}
+
+#projects p{
+  font-size: larger;
+}
+
+.project-previews div {
+  height: 276.406px;
+  width: 359.891px;
+}
+
+.project-previews {
+  animation-duration: 3s;
+  animation-name: slidein;
+  animation-iteration-count: initial;
+}
+
+@keyframes slidein {
+  from {
+    margin-left: 100%;
+    width: 300%;
+  }
+
+  to {
+    margin-left: 0%;
+    width: 100%;
+  }
+}
+
+.project-previews div img {
+  height: inherit;
+  width: inherit;
+  display: block;
+  width: 100%;
+}
+
+.project-image {
+    height: calc(100% - 6.8rem);
+    width: 100%;
+    object-fit: cover;
+}
+
+.project-previews p {
+  background-color: rgb(255, 255, 255);
+  color: rgb(0, 0, 0);
+  margin: 0;
+  font-size: larger;
+  font-weight: 200;
+  width: 350.92px;
+  padding: 18.560px 4.540px;
+}
+.project-previews span {
+  color: rgb(255, 255, 255);
+  font-size: x-large;
+  font-weight: 500;
+}
+
+.contact-section {
+  height: 400px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+}
+
+.contact-section h2 {
+  font-size: 3rem;
+}
+
+.contact-section p {
+  font-family: 'Raleway', sans-serif;
+  font-weight: 700;
+  font-size: larger;
+}
+
+.contact-section img {
+  padding-right: 3px;
+}
+
+.contact-section-header {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+}
+
+.contact-links {
+  display: flex;
+  width: 100%;
+  text-align: center;
+  justify-content: center;
+}
+
+.contact-details {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding-left: 15px;
+  padding-right: 15px;
+}
+
+footer {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: black;
+  color: white;
+  height: 100px;
+}
+
+footer p {
+  padding-left: 10px;
+  padding-right: 10px;
+}
+em {
+  color: #ffffff;
+  font-weight: 400;
+  font-size: larger;
+}
+
+#at {
+  font-size: xx-large;
+  font-weight: 700;
+}
+
+@media(any-hover: hover){
+  .project-previews .code:hover {
+    color: #000000;
+  }
+}
+
+@media (max-width: 60em){
+  #welcome-section {
+    font-size: 60%;
+  }
+  #navbar a {
+    font-size: 70%;
+  }
+  footer {
+    font-size: 80%;
+  }
+  .contact-section-header h2{
+    font-size: 250%;
+  }
+  .contact-section-header p{
+    font-size: 100%;
+  }
+}
+
+@media (max-width: 50em) {
+  .contact-links {
+    display: flex;
+    flex-wrap: wrap;
+  }
+}
+
+@media (max-width: 50em) {
+  #main-section {
+    display: flex;
+    flex-wrap: wrap;
+  }
+}
