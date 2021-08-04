@@ -52,6 +52,12 @@ header {
   padding: 10px 10px 5px 10px;
 }
 
+.nav-link:focus {
+  background-color: white;
+  color: black;
+  padding: 10px 10px 5px 10px;
+}
+
 h1 {
   font-size: 3.5em;
   font-weight: 500;
