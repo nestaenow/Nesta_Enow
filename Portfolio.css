@@ -250,10 +250,8 @@ em {
   font-weight: 700;
 }
 
-@media(any-hover: hover){
-  .project-previews .code:hover {
-    color: #000000;
-  }
+.project-previews:hover .code {
+  color: #000000;
 }
 
 @media (max-width: 60em){
