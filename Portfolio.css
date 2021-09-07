@@ -251,7 +251,7 @@ em {
 }
 
 .project-previews:hover .code {
-  color: #000000;
+  visibility: visible;
 }
 
 @media (max-width: 60em){
