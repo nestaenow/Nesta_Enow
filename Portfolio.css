@@ -177,10 +177,14 @@ a {
   padding: 18.560px 4.540px;
 }
 .project-previews span {
-  display: none;
+  visibility: hidden;
   color: rgb(0, 0, 0);
   font-size: x-large;
   font-weight: 500;
+}
+
+.project-previews:hover .code {
+  visibility: visible;
 }
 
 .contact-section {
@@ -251,9 +255,6 @@ em {
   font-weight: 700;
 }
 
-.project-previews:hover .code {
-  visibility: visible;
-}
 
 @media (max-width: 60em){
   #welcome-section {
