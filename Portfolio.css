@@ -177,7 +177,8 @@ a {
   padding: 18.560px 4.540px;
 }
 .project-previews span {
-  color: rgb(255, 255, 255);
+  display: none;
+  color: rgb(0, 0, 0);
   font-size: x-large;
   font-weight: 500;
 }
